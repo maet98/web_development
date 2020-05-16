@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Libro de visitas</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <form action="mailto:maletaveras@gmail.com" method="POST" enctype="text/plain">
+            <h1>Libro de visitas</h1>
+            <br><br>
+            <b>Datos personales:</b>
+            <p>Nombre: <input name="nombre" type="text" maxlength="50" required></p>
+            <p>Apellidos:<input name="apellido" type="text" maxlength="50" required></p>
+            <br>
+            <b>Indica un pseudonimo y una contrasena</b>
+            <p></p>
+            <p>Contrasena: <input name="password" type="password" maxlength="30" required></p>
+            <p>Otros datos:</p>
+            <table>
+                <tr>
+                    <td>
+                        Edad:
+                    </td>
+                    <td>
+                        Donde vives?
+                    </td>
+                    <td>
+                        Aficiones
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="1-10">1-10
+                    </td>
+                    <td>
+                        <input type="radio" name="ciudad" value="Santiago">Santiago
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Aficiones" value="Musica">Musica
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="11-20">11-20
+                    </td>
+                    <td>
+                        <input type="radio" name="ciudad" value="Santo Domingo">Santo Domingo
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Aficiones" value="Deportes">Deportes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="21-30">21-30
+                    </td>
+                    <td>
+                        <input type="radio" name="ciudad" value="La Romana">La Romana
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Aficiones" value="Pintura">Pintura
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="31-40">31-40
+                    </td>
+                    <td>
+                        <input type="radio" name="ciudad" value="San Cristobal">San Cristobal
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Aficiones" value="Lectura">Lectura
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="41-mas">41-mas
+                    </td>
+                    <td>
+                        <input type="radio" name="ciudad" value="Otros">Otros:
+                        <input type="text" name="otro">
+                    </td>
+                    <td>
+                        <input type="radio" name="Aficiones" value="Otras">Otras:
+                        <input type="text" name="otra">
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </body>
+</html>

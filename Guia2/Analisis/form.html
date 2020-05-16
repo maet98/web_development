@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <form action="mailto:maletaveras@gmail.com" method="POST" enctype="text/plain">
+            <p>Escribe tu nombre: <input name="name" type="text" maxlength="50" required></p>
+            <p>Introduce tu contrasena: <input name="password" type="password" maxlength="30" required></p>
+            <p>Enviame una foto tuya: <input type="file" name="photo" alt="examinar.."></p>
+            <p>Este manual te parece:</p>
+            <p><input type="radio" name="valuacion" value="Muy bueno" checked>Muy Bueno</p>
+            <p><input type="radio" name="valuacion" value=Bueno">Bueno</p>
+            <p><input type="radio" name="valuacion" value="Malo">Malo</p>
+            <p><input type="radio" name="valuacion" value="Muy malo">Muy malo</p>
+            <input type="checkbox" name="avisar"> Avisame de actualizaciones
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </body>
+</html>
