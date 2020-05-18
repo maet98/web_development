@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Libro de visitas</title>
-        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="libro.css">
     </head>
     <body>
         <form action="mailto:maletaveras@gmail.com" method="POST" enctype="text/plain">
@@ -10,12 +10,14 @@
             <br><br>
             <b>Datos personales:</b>
             <p>Nombre: <input name="nombre" type="text" maxlength="50" required></p>
-            <p>Apellidos:<input name="apellido" type="text" maxlength="50" required></p>
+            <p>Apellidos: <input name="apellido" type="text" maxlength="50" required></p>
             <br>
-            <b>Indica un pseudonimo y una contrasena</b>
-            <p></p>
-            <p>Contrasena: <input name="password" type="password" maxlength="30" required></p>
-            <p>Otros datos:</p>
+            <b>Indica un pseudonimo y una contrasena: </b>
+            <div>
+                <p>Pseudomino: <input type="text" name="pseudonimo" required>  Contrasena: <input type="password" name="password" required></p>
+            </div>
+            <b>Otros datos:</b>
+            <br><br>
             <table>
                 <tr>
                     <td>
@@ -81,14 +83,14 @@
                         <input type="text" name="otro">
                     </td>
                     <td>
-                        <input type="radio" name="Aficiones" value="Otras">Otras:
+                        <input type="checkbox" name="Aficiones" value="Otras">Otras:
                         <input type="text" name="otra">
                     </td>
                 </tr>
             </table>
             <br><br>
             <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+            <input type="reset" value="Restaurar">
         </form>
     </body>
 </html>
