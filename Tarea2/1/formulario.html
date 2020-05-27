@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formularios - ejemplo</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<h3>Ejemplo de formulario</h3>
+		<form method="get" enctype="text/plain">
+			Digita tu nombre y apellidos:<br />
+			<input
+				type="text"
+				name="nombre"
+				size="40"
+				maxlength="40"
+			/><br /><br />Elige un tema:<br />
+			<input type="radio" name="tema" value="ciencia" checked />ciencia<br />
+			<input type="radio" name="tema" value="arte" />arte<br />
+			<input
+				type="radio"
+				name="tema"
+				value="literatura"
+			/>literatura<br /><br />
+			Marca tus aficiones
+			<input
+				type="checkbox"
+				name="aficion"
+				value="deporte"
+				checked
+			/>Deporte<br />
+			<input
+				type="checkbox"
+				name="aficion"
+				value="musica"
+				checked
+			/>Música<br />
+			<input type="checkbox" name="aficion" value="lectura" />Lectura<br />
+			<input type="checkbox" name="aficion" value="pesca" />Pesca<br />
+			<input type="checkbox" name="aficion" value="pasear" />Pasear<br />
+			<input type="checkbox" name="aficion" value="cine" />Cine<br />
+			Digita la contraseña de usuario:<br />
+			<input
+				type="password"
+				name="password"
+				size="10"
+				maxlength="10"
+			/><br /><br />
+			<input type="submit" value="enviar datos" />
+			<input type="reset" value="borrar datos" /><br /><br />
+		</form>
+	</body>
+</html>

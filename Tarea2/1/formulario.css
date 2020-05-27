@@ -1,0 +1,14 @@
+body{
+    background-color:#ffffaa;
+}
+
+h3 {
+    text-align:center;
+    font-weight:bold;
+    font-size:16pt;
+    color:blue;
+}
+
+hr{
+    background-color:blue;
+}

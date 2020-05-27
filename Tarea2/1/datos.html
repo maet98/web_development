@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=
+    , initial-scale=1.0"
+		/>
+		<title>Ejemplo de Formularios</title>
+		<link rel="stylesheet" href="text/css" href="no-hay-archivo-css" />
+	</head>
+	<body>
+		<div id="stylized" class="myform">
+			<form id="form" name="form" method="POST" action="./enviado.html">
+				<h1>
+					Formulario de Registro:
+				</h1>
+				<p>Llenar los siguientes campos:</p>
+				<label>
+					Nombre
+					<span class="small">Agregue su nombre</span>
+				</label>
+				<input type="text" name="name" id="name" />
+				<label>
+					Año de nacimiento
+					<span class="small">Seleccione su año de nacimiento</span>
+				</label>
+				<input type="number" name="nacido" min="1900" />
+				<label>
+					Email
+					<span>Agregue un email v&aacute;lido</span>
+				</label>
+				<input type="text" name="email" id="email" />
+				<label>
+					Password
+					<span>Min. 6 caracteres </span>
+				</label>
+				<input type="password" name="password" id="password" />
+				<button type="submit">Enviar datos</button>
+				<div class="spacer"></div>
+			</form>
+		</div>
+	</body>
+</html>
