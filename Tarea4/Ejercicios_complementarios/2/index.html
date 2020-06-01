@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <script>
+        function type(arr){
+            if(arr[0] == arr[1] && arr[1] == arr[2]){
+                return 0;
+            }
+            else if(arr[0] != arr[1] && arr[1] != arr[2] && arr[0] != arr[2]){
+                return 2;
+            }
+            else{
+                return 1;
+            }
+        }
+        function relate(value){
+            if(value == 0){
+                return "equilatero";
+            }
+            else if(value ==1){
+                return "isoceles";
+            }
+            else{
+                return "Escaleno";
+            }
+        }
+        var types = [0,0,0];
+        for(let i = 0;i < 4;i++){
+            var arr = [];
+            for(let j = 0;j < 3;j++){
+                var x = parseInt(prompt(`ingrese el lado ${j+1} del triangulo ${i+1}`));
+                arr.push(x);
+            }
+            var ac = type(arr);
+            types[ac]++;
+            document.write(`Triangulo ${i+1} es un ${relate(ac)}`);
+            document.write('<br>');
+        }
+        var min = 0;
+        for(let i = 0;i < 3;i++){
+            document.writeln(`Triangulos ${relate(i)}: ${types[i]} `);
+            document.write('<br>');
+            if(types[min] > types[i]){
+                min = i;
+            }
+        }
+        document.writeln(`El triangulo con menor cantidad es: ${relate(min)} con ${types[min]}`);
+    </script>
+
+    </body>
+</html>

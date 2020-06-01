@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    <script>
+        var word = prompt("Ingresa alguna de estas palabaras:(casa,mesa,perro,gato)");
+        var translate;
+        switch(word){
+            case "casa":
+                translate = "house";
+                break;
+            case "mesa":
+                translate = "table";
+                break;
+            case "perro":
+                translate = "dog";
+                break;
+            case "gato":
+                translate = "cat";
+                break;
+            default:
+                translate = "no";
+                break;
+        }
+        if(translate != "no"){
+            document.write(translate);
+        }
+        else{
+            document.write("Esa palabra no estaba en las acordadas");
+        }
+    </script>
+    </body>
+</html>
