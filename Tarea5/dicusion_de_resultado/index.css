@@ -1,0 +1,14 @@
+.container{
+    display:flex;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.box{
+    padding: 4px;
+    border: 2px dashed black;
+    margin: 4px;
+}

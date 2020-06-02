@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
     <body>
-    <script>
-        document.write("<h1>Heading</h1>");
-        document.write
-    </script>
+        <script>
+            var first = "I NEVER AM REALLY SATISFIED THAT I UNDERSTAND ANYTHING BECAUSE UNDERSTAND AND IT WELL AS I MAY. MY COMPREHESION CAN ONLY BE AN INFINITESIMAL FRACTION OF ALL I WANT TO UNDERSTAND ABOUT THE MANY CONNECTIONS AND RELATIONS WHICH OCCUR TO ME. HOW THE MATTER IN QUESTION WAS FIRST THOUGHT OF OR ARRIVED AT . ETC. ETC.";
+            var second = "IN ALMOST EVERY COMPUTATION A GREAT VARIETY OF ARRANGEMENTS FOR THE SUCCESSION OF THE PROCESSES IS POSSIBLE, AND VARIOUS CONSIDERATIONS MUST INFLUENCE THE SELECTIONS AMONGST THEM FOR THE PURPOSES OF A CALCULATING ENGINE";
+            document.open();
+            document.write('<div class="container box"><h1>Heading</h1></div>');
+            document.write(`<div class="container"><div class="item box"><p>${first}</p></div><div class="item box"><p>${second}</p></div>  </div>`);
+            document.write('<p class="box">FOOTER</p>');
+            document.close();
+        </script>
     </body>
 </html>
